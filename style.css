@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: whitesmoke;
+font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1em;
+    color: #e94d58;
+    margin: 15px 0;
+    }
+
+.gif {
+height: 100%;
+width: 100%;
+}
+
+
+
+.btn-group {
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+margin-top: 5px;
+}
+
+button {
+position: absolute;
+width: 150px;
+height: inherit;
+color: white;
+font-size: 1.2em;
+border-radius: 3px;
+outline: none;
+cursor: pointer;
+box-shadow: © 2px 4px gray;
+border: 2px solid #e94d58;
+font-size: 1.2em;
+}
+
+button:nth-child(1) {
+margin-left: -200px;
+background: #e94d58;
+}
+
+button:nth-child(2) {
+margin-right: -200px;
+background: white;
+color: #e94d58;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    button {
+        width: 120px;
+        font-size: 1em;
+    }
+    
+    button:nth-child(1) {
+        margin-left: -150px;
+    }
+
+    button:nth-child(2) {
+        margin-right: -150px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100px;
+        font-size: 0.8em;
+    }
+    
+    button:nth-child(1) {
+        margin-left: -100px;
+    }
+
+    button:nth-child(2) {
+        margin-right: -100px;
+    }
+}
+
+/* Additional Styles for Small Phones */
+@media (max-width: 320px) {
+    button {
+        width: 80px;
+        font-size: 0.7em;
+    }
+    
+    button:nth-child(1) {
+        margin-left: -80px;
+    }
+
+    button:nth-child(2) {
+        margin-right: -80px;
+    }
+}
